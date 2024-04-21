@@ -1,0 +1,8 @@
+db:
+  host: 'localhost'
+  username: 'root'
+  password: 'nest'
+  synchronize: true
+
+jwt:
+ secret: 'secret1234'
