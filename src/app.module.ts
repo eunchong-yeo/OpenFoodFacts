@@ -3,12 +3,14 @@ import { Module } from '@nestjs/common';
 import { AuthModule } from './auth/auth.module';
 import { typeORMConfig } from './configs/typeorm.config';
 import { ProductModule } from './product/product.module';
+import { UserToProductModule } from './user-to-product/user-to-product.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(typeORMConfig),
     AuthModule,
-    ProductModule
+    ProductModule,
+    UserToProductModule
   ],
 })
 export class AppModule {}
