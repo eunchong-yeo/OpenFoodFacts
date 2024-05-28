@@ -13,5 +13,7 @@ export class AuthCredentialsDto{
     @Matches(/^[a-zA-Z0-9]*$/,{
         message: 'password only accepts english and number'
     })
+
+    
     password: string;
 }
